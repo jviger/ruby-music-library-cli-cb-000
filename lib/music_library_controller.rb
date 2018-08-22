@@ -22,6 +22,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     user_input = gets
     }
+  end
     
   end
   
