@@ -34,6 +34,9 @@ class MusicLibraryController
       when "list genre"
         puts "You just making it up!"
       when "exit"
+        puts "You just making it up!"
+      else
+        puts "Enter a listed value"
       end
     end
     
