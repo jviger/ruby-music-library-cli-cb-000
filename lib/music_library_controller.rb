@@ -26,7 +26,7 @@ class MusicLibraryController
       when "list artists"
         puts 'Well done!'
       when "list songs"
-        puts 'Try harder!'
+        list_songs
       when "list genres"
         puts 'You need help!!!'
       when "list artist"
