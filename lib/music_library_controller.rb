@@ -91,7 +91,7 @@ class MusicLibraryController
     song_list =Song.all.sort{|x,y| x.name <=> y.name }
     song_list = song_list.select{|y| song_list.index(y) = requested_song -1}
     song_list.each do |x|
-    puts "Playing #{x.name} by #{x.artist.name}"
-  end
+      puts "Playing #{x.name} by #{x.artist.name}"
+    end
   end
 end
