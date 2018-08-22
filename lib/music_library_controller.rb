@@ -36,7 +36,7 @@ class MusicLibraryController
       when "play song"
         play_song
       when "exit"
-        puts "You just making it up!"
+        puts "Welcome to your music library!"
       else
         puts "Enter a listed value"
       end
