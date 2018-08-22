@@ -22,7 +22,19 @@ class MusicLibraryController
       puts "To quit, type 'exit'."
       user_input = gets
       
-      
+      case user_input
+      when "list artists"
+        puts 'Well done!'
+      when "list songs"
+        puts 'Try harder!'
+      when "list genres"
+        puts 'You need help!!!'
+      when "list artist"
+        puts "You just making it up!"
+      when "list genre"
+        puts "You just making it up!"
+      when "exit"
+      end
     end
     
   end
