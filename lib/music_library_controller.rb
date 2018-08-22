@@ -93,4 +93,5 @@ class MusicLibraryController
     song_list.each do |x|
     puts "Playing #{x.name} by #{x.artist.name}"
   end
+  end
 end
