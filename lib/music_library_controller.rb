@@ -10,7 +10,7 @@ class MusicLibraryController
   
   def call 
     user_input = ''
-    while user_input != "exit" do {
+    while user_input != "exit" do 
     puts "Welcome to your music library!"
     puts "To list all of the artists in your library, enter 'list artists'."
     puts "To list all of your songs, enter 'list songs'."
@@ -21,7 +21,7 @@ class MusicLibraryController
     puts "What would you like to do?"
     puts "To quit, type 'exit'."
     user_input = gets
-    }
+    
   end
     
   end
