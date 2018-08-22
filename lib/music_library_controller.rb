@@ -81,7 +81,7 @@ class MusicLibraryController
     song_list = song_list.select{|y| y.genre.name == requested_genre}
     
     song_list.each do |x|
-         puts "#{song_list.index(x) + 1}. #{x.name} - #{x.artist.name}"
+         puts "#{song_list.index(x) + 1}. #{x.artist.name} - #{x.name}"
       end
   end
   
