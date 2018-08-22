@@ -70,7 +70,6 @@ class MusicLibraryController
     song_list.each do |x|
          puts "#{song_list.index(x) + 1}. #{x.name} - #{x.genre.name}"
       end
-    end
   end
   
 end
