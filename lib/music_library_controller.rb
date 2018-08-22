@@ -52,7 +52,7 @@ class MusicLibraryController
   def list_artists
     artist_list =Artist.all.sort{|x,y| x.name <=> y.name }
     artist_list.each do |x|
-    puts "#{x}"
+    puts "#{x.name}"
     end
   end
   
