@@ -44,6 +44,6 @@ class MusicLibraryController
   
   def list_songs
     Song.all.sort{{|x,y| x <=> y }.each |x|
-    puts 
+    puts "#{"
   
 end
