@@ -24,15 +24,15 @@ class MusicLibraryController
       
       case user_input
       when "list artists"
-        puts 'Well done!'
+        list_artists
       when "list songs"
         list_songs
       when "list genres"
-        puts 'You need help!!!'
+        list_genres
       when "list artist"
-        puts "You just making it up!"
+        list_songs_by_artist
       when "list genre"
-        puts "You just making it up!"
+        list_songs_by_genre
       when "exit"
         puts "You just making it up!"
       else
@@ -85,4 +85,14 @@ class MusicLibraryController
       end
   end
   
+  def play_song
+    puts "Please enter the name of a genre:"
+    requested_genre = gets
+    song_list =Song.all.sort{|x,y| x.name <=> y.name }
+    song_list = song_list.select{|y| y.genre.name == requested_genre}
+    
+    song_list.each do |x|
+         puts "#{song_list.index(x) + 1}. #{x.artist.name} - #{x.name}"
+      end
+  end
 end
